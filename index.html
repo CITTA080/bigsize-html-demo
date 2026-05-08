@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BIGSIZE.CO.JP | 大きいサイズのメンズ服専門店</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-additions.css">
 </head>
 <body>
   <div class="topbar">
@@ -19,7 +20,7 @@
       <span>大きいサイズのメンズ服専門店</span>
     </a>
     <form class="search" role="search">
-      <input type="search" placeholder="何をお探しですか？（例：パーカー、NEW ERA、チノパン）">
+      <input type="search" placeholder="サイズ・ブランド・身長から探す（例：8L NEW ERA）">
       <button type="submit">検索</button>
     </form>
     <nav class="header-actions" aria-label="ユーザーメニュー">
@@ -30,8 +31,18 @@
     </nav>
   </header>
 
+  <nav class="global-nav" aria-label="グローバルナビ">
+    <a href="#sizes">サイズで探す</a>
+    <a href="#exclusive-showcase">別注ブランド</a>
+    <a href="#categories">カテゴリ</a>
+    <a href="new-era.html">NEW ERA別注</a>
+    <a href="#features">特集</a>
+    <a href="#coordinate">コーデ</a>
+    <a href="#" class="sale-link">SALE</a>
+  </nav>
+
   <main>
-    <section class="home-size-search" aria-label="サイズですぐ探す">
+    <section class="home-size-search" id="sizes" aria-label="サイズですぐ探す">
       <h1>サイズで<br>すぐ探す</h1>
       <div class="size-chips">
         <a href="#ranking">2L</a>
@@ -40,7 +51,9 @@
         <a href="#ranking">5L</a>
         <a href="#ranking">6L</a>
         <a href="#ranking">7L</a>
-        <a class="deep" href="#ranking">8L〜10L</a>
+        <a class="deep" href="#ranking">8L</a>
+        <a class="deep" href="#ranking">9L</a>
+        <a class="deep" href="#ranking">10L+</a>
       </div>
       <a class="measure-link" href="#body-search">サイズ表を見る</a>
     </section>
@@ -57,16 +70,18 @@
       <a href="#ranking">人気ランキング</a>
     </section>
 
+    <!-- ▼▼▼ ヒーロー（3層コピー：WHY / WHO / HOW）▼▼▼ -->
     <section class="home-hero" aria-label="メインビジュアル">
       <button class="hero-arrow left" aria-label="前へ"></button>
       <div class="home-main-visual">
         <div class="home-hero-copy">
-          <p>日本最大級の<br>大きいサイズ展開</p>
-          <strong>2L〜10L</strong>
+          <span class="why-label">— あきらめさせない。</span>
+          <p>カルチャーに、<br>サイズの壁はない。</p>
+          <strong>2L → 10L</strong>
           <div class="hero-proof">
-            <span>日本でここだけの豊富なサイズ展開</span>
-            <span>別注・特注サイズ多数ご用意</span>
-            <span>有名ブランドの別注サイズが充実</span>
+            <span>日本最大級の<br>サイズ展開</span>
+            <span>100ブランド以上を<br>別注</span>
+            <span>NEW ERA別注など<br>独自展開</span>
           </div>
         </div>
         <div class="home-model">
@@ -82,18 +97,137 @@
           <i class="mini-hat"></i>
         </a>
         <a class="measure-banner" href="#body-search">
-          <span>別注・特注サイズ</span>
-          <strong>多数ご用意</strong>
-          <small>あなたのサイズがきっと見つかる</small>
+          <span>身長・体型から探す</span>
+          <strong>あなたサイズ<br>診断</strong>
+          <small>同じ体型の人の着用例も</small>
         </a>
-        <a class="box-banner" href="#exclusive">
-          <span>ほとんどの商品が</span>
-          <strong>当店だけの別注商品</strong>
+        <a class="box-banner" href="#exclusive-showcase">
+          <span>ほとんどが</span>
+          <strong>当店だけの<br>別注商品</strong>
           <small>一部インポート商品も取扱い</small>
         </a>
       </div>
       <button class="hero-arrow right" aria-label="次へ"></button>
       <div class="slider-dots" aria-label="スライダー位置"><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <!-- ▼▼▼ 別注ブランドショーケース（新設）▼▼▼ -->
+    <section class="exclusive-showcase" id="exclusive-showcase" aria-label="別注ブランドショーケース">
+      <div class="showcase-head">
+        <span class="eyebrow">EXCLUSIVE BRANDS — 弊社別注</span>
+        <h2>売っているのは服ではなく、<br>別注の物語。</h2>
+        <p>NEW ERA、Champion、Carhartt、Dickies——カルチャーを愛する日本人の大きな体に届くまで、ブランドと共に別注をつくり続けています。100以上のブランドと組んで、ここにしかない一着を。</p>
+      </div>
+      <div class="exclusive-grid">
+        <a href="new-era.html" class="exclusive-card featured">
+          <span class="badge">看板別注</span>
+          <strong>NEW ERA</strong>
+          <span class="brand-jp">ニューエラ</span>
+          <span class="size-range">別注 2L〜8L</span>
+          <small>頭囲66.5cmまで対応</small>
+        </a>
+        <a href="#" class="exclusive-card">
+          <strong>Champion</strong>
+          <span class="brand-jp">チャンピオン</span>
+          <span class="size-range">別注 2L〜7L</span>
+        </a>
+        <a href="#" class="exclusive-card">
+          <strong>Carhartt</strong>
+          <span class="brand-jp">カーハート</span>
+          <span class="size-range">別注 2L〜6L</span>
+        </a>
+        <a href="#" class="exclusive-card">
+          <strong>BEN DAVIS</strong>
+          <span class="brand-jp">ベンデイビス</span>
+          <span class="size-range">別注 2L〜8L</span>
+        </a>
+        <a href="#" class="exclusive-card">
+          <strong>Dickies</strong>
+          <span class="brand-jp">ディッキーズ</span>
+          <span class="size-range">別注 2L〜6L</span>
+        </a>
+        <a href="#" class="exclusive-card">
+          <strong>EDWIN</strong>
+          <span class="brand-jp">エドウィン</span>
+          <span class="size-range">別注 2L〜8L</span>
+        </a>
+      </div>
+      <a href="#" class="showcase-link">別注ブランド一覧を見る ›</a>
+    </section>
+
+    <!-- ▼▼▼ NEW ERA別注フィーチャー（編集記事風）▼▼▼ -->
+    <section class="newera-feature" aria-label="NEW ERA別注ストーリー">
+      <a class="feature-photo" href="new-era.html"></a>
+      <div class="feature-copy">
+        <span class="eyebrow">FEATURE 01 ─ NEW ERA × BIGSIZE</span>
+        <h2>頭囲66.5cmまで作った、<br>世界に一つの別注NEW ERA。</h2>
+        <p>「サイズが合わなくて、キャップを諦めていた」その声に応えるために、NEW ERAと共同で日本最大の頭周りサイズを開発しました。深め設計、シルエットのバランス、品質はすべて正規。当店のみの取扱いです。</p>
+        <div class="feature-meta">
+          <span><strong>2L〜8L</strong>頭囲61.5〜66.5cm対応</span>
+          <span><strong>50型以上</strong>キャップ・ハット・アパレル</span>
+        </div>
+        <a href="new-era.html" class="feature-cta">別注ストーリーを読む ›</a>
+      </div>
+    </section>
+
+    <section class="section-head" id="ranking">
+      <div class="with-tabs">
+        <h2>人気ランキング</h2>
+        <a class="active" href="#">デイリー</a>
+        <a href="#">週間</a>
+        <a href="#">月間</a>
+      </div>
+      <a href="#">すべて見る</a>
+    </section>
+    <section class="product-grid ranking-grid">
+      <article class="product-card rank-card">
+        <span class="rank first">1</span>
+        <a class="product-photo model-product black-polo" href="product.html"></a>
+        <div class="badges"><span class="badge-exclusive">別注</span></div>
+        <h3><a href="product.html">NEW ERA 別注 59FIFTY ベーシックキャップ</a></h3>
+        <p class="size-range-card">2L〜8L</p>
+        <strong>¥7,700 <small>税込</small></strong>
+      </article>
+      <article class="product-card rank-card">
+        <span class="rank">2</span>
+        <a class="product-photo model-product beige-parka" href="#"></a>
+        <div class="badges"><span class="badge-exclusive">別注</span></div>
+        <h3>DRYストレッチ ジップパーカー</h3>
+        <p class="size-range-card">2L〜6L</p>
+        <strong>¥7,700 <small>税込</small></strong>
+      </article>
+      <article class="product-card rank-card">
+        <span class="rank bronze">3</span>
+        <a class="product-photo model-product gray-tee" href="#"></a>
+        <div class="badges"><span class="badge-largest">日本最大</span></div>
+        <h3>ヘビーウェイト 半袖Tシャツ</h3>
+        <p class="size-range-card">2L〜10L</p>
+        <strong>¥3,300 <small>税込</small></strong>
+      </article>
+      <article class="product-card rank-card">
+        <span class="rank plain">4</span>
+        <a class="product-photo model-product black-pants" href="#"></a>
+        <div class="badges"><span class="badge-exclusive">別注</span></div>
+        <h3>ストレッチイージーパンツ</h3>
+        <p class="size-range-card">2L〜8L</p>
+        <strong>¥6,050 <small>税込</small></strong>
+      </article>
+      <article class="product-card rank-card">
+        <span class="rank plain">5</span>
+        <a class="product-photo model-product navy-polo" href="#"></a>
+        <div class="badges"><span class="badge-exclusive">別注</span></div>
+        <h3>DRY鹿の子ポロシャツ</h3>
+        <p class="size-range-card">2L〜6L</p>
+        <strong>¥5,500 <small>税込</small></strong>
+      </article>
+      <article class="product-card rank-card">
+        <span class="rank plain">6</span>
+        <a class="product-photo model-product green-parka" href="#"></a>
+        <div class="badges"><span class="badge-import">インポート</span></div>
+        <h3>撥水フードジャケット</h3>
+        <p class="size-range-card">2L〜6L</p>
+        <strong>¥9,900 <small>税込</small></strong>
+      </article>
     </section>
 
     <section class="section-head" id="categories">
@@ -112,86 +246,32 @@
       <a href="product.html"><span class="product-photo hat black"></span>雑貨・小物</a>
     </section>
 
-    <section class="section-head" id="ranking">
-      <div class="with-tabs">
-        <h2>人気ランキング</h2>
-        <a class="active" href="#">デイリー</a>
-        <a href="#">週間</a>
-        <a href="#">月間</a>
-      </div>
-      <a href="#">すべて見る</a>
-    </section>
-    <section class="product-grid ranking-grid">
-      <article class="product-card rank-card">
-        <span class="rank first">1</span>
-        <a class="product-photo model-product black-polo" href="product.html"></a>
-        <div class="badges"><span>別注</span><span>人気</span></div>
-        <h3><a href="product.html">NEW ERA 別注 59FIFTY ベーシックキャップ 2L〜6L</a></h3>
-        <strong>¥6,600 <small>税込</small></strong>
-      </article>
-      <article class="product-card rank-card">
-        <span class="rank">2</span>
-        <a class="product-photo model-product beige-parka" href="#"></a>
-        <div class="badges"><span>別注</span><span>NEW</span></div>
-        <h3>DRYストレッチ ジップパーカー 2L〜6L</h3>
-        <strong>¥7,700 <small>税込</small></strong>
-      </article>
-      <article class="product-card rank-card">
-        <span class="rank bronze">3</span>
-        <a class="product-photo model-product gray-tee" href="#"></a>
-        <div class="badges"><span>別注</span><span>人気</span></div>
-        <h3>ヘビーウェイト 半袖Tシャツ 2L〜10L</h3>
-        <strong>¥3,300 <small>税込</small></strong>
-      </article>
-      <article class="product-card rank-card">
-        <span class="rank plain">4</span>
-        <a class="product-photo model-product black-pants" href="#"></a>
-        <div class="badges"><span>別注</span></div>
-        <h3>ストレッチイージーパンツ 2L〜8L</h3>
-        <strong>¥6,050 <small>税込</small></strong>
-      </article>
-      <article class="product-card rank-card">
-        <span class="rank plain">5</span>
-        <a class="product-photo model-product navy-polo" href="#"></a>
-        <div class="badges"><span>NEW</span></div>
-        <h3>DRY鹿の子ポロシャツ 2L〜6L</h3>
-        <strong>¥5,500 <small>税込</small></strong>
-      </article>
-      <article class="product-card rank-card">
-        <span class="rank plain">6</span>
-        <a class="product-photo model-product green-parka" href="#"></a>
-        <div class="badges"><span>再入荷</span></div>
-        <h3>撥水フードジャケット 2L〜6L</h3>
-        <strong>¥9,900 <small>税込</small></strong>
-      </article>
-    </section>
-
     <section class="section-head">
-      <h2>取扱いブランド</h2>
+      <h2>取扱いブランド一覧</h2>
       <a href="#">すべて見る</a>
     </section>
-    <section class="brand-grid" id="exclusive">
-      <a href="new-era.html"><strong>NEW ERA</strong><span>ニューエラ（別注）</span></a>
-      <a href="#"><strong>BEN DAVIS</strong><span>ベンデイビス（別注）</span></a>
+    <section class="brand-grid">
+      <a href="new-era.html"><strong>NEW ERA</strong><span>ニューエラ</span></a>
+      <a href="#"><strong>BEN DAVIS</strong><span>ベンデイビス</span></a>
       <a href="#"><strong>DC</strong><span>ディーシーシューズ</span></a>
-      <a href="#"><strong>adidas</strong><span>アディダス（別注）</span></a>
-      <a href="#"><strong>EDWIN</strong><span>エドウィン（別注）</span></a>
+      <a href="#"><strong>adidas</strong><span>アディダス</span></a>
+      <a href="#"><strong>EDWIN</strong><span>エドウィン</span></a>
       <a href="#"><strong>QUIKSILVER</strong><span>クイックシルバー</span></a>
       <a href="#"><strong>OUTDOOR</strong><span>アウトドアプロダクツ</span></a>
       <a href="#"><strong>KANGOL</strong><span>カンゴール</span></a>
     </section>
 
-    <section class="section-head">
-      <h2>コーディネート</h2>
+    <section class="section-head" id="coordinate">
+      <h2>体型別コーディネート</h2>
       <a href="#">すべて見る</a>
     </section>
     <section class="coordinate-grid">
-      <article><div class="style-photo"><div class="photo-person small"></div></div><h3>ストリートカジュアル</h3><p>着用サイズ：3L<br>身長：178cm</p></article>
-      <article><div class="style-photo olive"><div class="photo-person small"></div></div><h3>アウトドアスタイル</h3><p>着用サイズ：4L<br>身長：182cm</p></article>
-      <article><div class="style-photo green"><div class="photo-person small"></div></div><h3>夏のリラックスコーデ</h3><p>着用サイズ：3L<br>身長：175cm</p></article>
-      <article><div class="style-photo ink"><div class="photo-person small"></div></div><h3>大人のキレイめコーデ</h3><p>着用サイズ：5L<br>身長：180cm</p></article>
-      <article><div class="style-photo suit"><div class="photo-person small"></div></div><h3>ビジネススタイル</h3><p>着用サイズ：4L<br>身長：183cm</p></article>
-      <article><div class="style-photo gray"><div class="photo-person small"></div></div><h3>スポーツミックス</h3><p>着用サイズ：3L<br>身長：177cm</p></article>
+      <article><div class="style-photo"><div class="photo-person small"></div></div><h3>ストリートカジュアル</h3><p>178cm／75kg・スリム<br>着用：3L</p></article>
+      <article><div class="style-photo olive"><div class="photo-person small"></div></div><h3>アウトドアスタイル</h3><p>182cm／95kg・がっちり<br>着用：4L</p></article>
+      <article><div class="style-photo green"><div class="photo-person small"></div></div><h3>夏のリラックスコーデ</h3><p>175cm／110kg・ぽっちゃり<br>着用：5L</p></article>
+      <article><div class="style-photo ink"><div class="photo-person small"></div></div><h3>大人のキレイめ</h3><p>180cm／120kg・がっちり<br>着用：5L</p></article>
+      <article><div class="style-photo suit"><div class="photo-person small"></div></div><h3>ビジネススタイル</h3><p>183cm／130kg・長身<br>着用：6L</p></article>
+      <article><div class="style-photo gray"><div class="photo-person small"></div></div><h3>スポーツミックス</h3><p>177cm／115kg・がっちり<br>着用：4L</p></article>
     </section>
 
     <section class="section-head" id="features">
@@ -199,22 +279,24 @@
       <a href="#">すべて見る</a>
     </section>
     <section class="feature-banners home-features">
-      <a class="blue" href="#"><span>NEW ARRIVAL</span>新作アイテム続々入荷中！</a>
-      <a class="green-banner" href="#">機能性アイテム特集<span>快適・防風・軽量をもっと快適に</span></a>
-      <a class="sand" href="#">セットアップ特集<span>大きいサイズのセットアップが充実</span></a>
-      <a class="dark" href="#">Tシャツコレクション<span>2L〜10Lの豊富なラインナップ</span></a>
-      <a class="light-blue" href="#">夏の涼感アイテム<span>涼しく快適に過ごすための一枚</span></a>
+      <a class="dark" href="#"><span>FEATURE 02</span>8L以上専門カタログ<small>他で見つからなかった、最後の一着を</small></a>
+      <a class="green-banner" href="#"><span>FEATURE 03</span>機能性アイテム特集<small>快適・防風・軽量</small></a>
+      <a class="sand" href="#"><span>FEATURE 04</span>セットアップ特集<small>大きいサイズのセットアップが充実</small></a>
+      <a class="blue" href="#"><span>NEW ARRIVAL</span>新作アイテム続々入荷中</a>
+      <a class="light-blue" href="#">夏の涼感アイテム<span>涼しく快適に過ごす一枚</span></a>
     </section>
 
-    <section class="rating-summary">
+    <!-- ▼▼▼ レビュー（「あきらめていた」声を意図的にキュレーション）▼▼▼ -->
+    <section class="rating-summary curated">
       <article class="score">
         <p>お客様からの高評価</p>
         <strong>★★★★★ 4.78</strong>
         <span>レビュー総数 8,642件</span>
+        <small>「あきらめていた」声を集めました</small>
       </article>
-      <article><strong>★★★★★ 5</strong><h3>やっと見つけた理想のサイズ！</h3><p>普段なかなかサイズがなくて困っていましたが、こちらはサイズが豊富で助かります。</p><span>40代・会社員</span></article>
-      <article><strong>★★★★★ 5</strong><h3>NEW ERAの別注が最高</h3><p>頭が大きくても憧れるキャップが見つかって嬉しいです。</p><span>30代・自営業</span></article>
-      <article><strong>★★★★★ 5</strong><h3>対応がとても丁寧</h3><p>サイズ相談にも親身に対応していただき、安心して買い物できました。</p><span>50代・会社員</span></article>
+      <article><strong>★★★★★ 5</strong><h3>諦めていたNEW ERAに出会えた</h3><p>頭が大きくてキャップは諦めていました。深さがあって自然にかぶれます。</p><span>30代・自営業</span></article>
+      <article><strong>★★★★★ 5</strong><h3>やっと見つけた理想のサイズ</h3><p>普段なかなかサイズがなくて困っていましたが、こちらはサイズが豊富で助かります。</p><span>40代・会社員</span></article>
+      <article><strong>★★★★★ 5</strong><h3>10Lがある店、ここしかない</h3><p>体重130kgで諦めかけていたところ、10Lの取扱いがあり驚きました。</p><span>50代・会社員</span></article>
     </section>
 
     <section class="body-recommend home-support" id="body-search">
@@ -235,11 +317,14 @@
       <span>サイズ交換無料</span>
       <span>安心のサポート</span>
     </div>
+    <div class="footer-statement">
+      <strong>カルチャーが、大きい体に届くまで。<br>ブランドと共に別注する、最後の店。</strong>
+    </div>
     <div class="footer-links">
       <div><strong>お買い物ガイド</strong><a href="#">ご利用ガイド</a><a href="#">お支払い方法</a><a href="#">返品・交換について</a><a href="#">よくあるご質問</a></div>
       <div><strong>カテゴリから探す</strong><a href="#">トップス</a><a href="#">パンツ</a><a href="#">アウター</a><a href="#">スーツ</a></div>
-      <div><strong>ブランドから探す</strong><a href="#">NEW ERA</a><a href="#">BEN DAVIS</a><a href="#">DC SHOES</a><a href="#">adidas</a></div>
-      <div><strong>特集・コンテンツ</strong><a href="new-era.html">NEW ERA別注サイズ特集</a><a href="#">ランキング</a><a href="#">コーディネート</a><a href="#">スタッフブログ</a></div>
+      <div><strong>別注ブランド</strong><a href="new-era.html">NEW ERA</a><a href="#">Champion</a><a href="#">Carhartt</a><a href="#">BEN DAVIS</a></div>
+      <div><strong>特集・コンテンツ</strong><a href="new-era.html">NEW ERA別注ストーリー</a><a href="#">8L以上専門カタログ</a><a href="#">体型別コーデガイド</a><a href="#">スタッフブログ</a></div>
     </div>
     <small>© BIGSIZE.CO.JP All Rights Reserved.</small>
   </footer>

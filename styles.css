@@ -1928,14 +1928,14 @@ th {
   background-image: url("assets/style-street-model.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .model-product.beige-parka {
   background-image: url("assets/rank-beige-hoodie.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .model-product.black-pants {
@@ -1954,7 +1954,7 @@ th {
   background-image: url("assets/style-street-model.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .model-product.black-polo {
@@ -1994,12 +1994,47 @@ th {
   background-image: url("assets/rank-green-jacket.png");
 }
 
+.model-product,
+.style-photo,
+.photo-person.profile {
+  background-color: #f3f3f3;
+}
+
+.ranking-grid .product-photo.model-product {
+  aspect-ratio: 1 / 1.12;
+  background-size: 92% auto;
+  background-position: center bottom;
+}
+
+.coordinate-grid .style-photo {
+  background-size: auto 98%;
+  background-position: center bottom;
+}
+
+.styling-grid .style-photo {
+  background-size: auto 100%;
+  background-position: center bottom;
+}
+
+.fit-grid .photo-person.profile {
+  background-size: auto 104%;
+  background-position: center bottom;
+}
+
+.product-photo.tee,
+.product-photo.jacket,
+.product-photo.shirt,
+.product-photo.suit,
+.product-photo.inner {
+  background-size: 70% auto;
+}
+
 .product-photo.hat.back {
   background-image: url("assets/product-cap-back.png");
 }
 
 .product-photo.pants {
-  background: #f7f7f7 url("assets/product-black-pants.png") center / 70% auto no-repeat;
+  background: #f7f7f7 url("assets/product-black-pants.png") center / 58% auto no-repeat;
 }
 
 .product-photo.pants::before,
@@ -2009,20 +2044,65 @@ th {
 
 .home-features .sand {
   background-image: linear-gradient(90deg, rgba(122, 90, 47, .92), rgba(122, 90, 47, .54)), url("assets/feature-setup-models.png");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
 }
 
 .home-features .dark {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, .92), rgba(0, 0, 0, .5)), url("assets/rank-gray-tee.png");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
 }
 
 .home-features .light-blue {
   background-image: linear-gradient(90deg, rgba(185, 212, 231, .95), rgba(185, 212, 231, .48)), url("assets/rank-navy-polo.png");
-  background-position: center;
+  background-position: center right;
   background-size: cover;
+}
+
+.home-main-visual {
+  overflow: hidden;
+}
+
+.home-model {
+  width: min(42%, 390px);
+  height: 96%;
+  right: 6%;
+  background-size: contain;
+}
+
+.hero-visual .model-card {
+  width: min(48%, 340px);
+  height: 95%;
+  right: 18%;
+  background-size: contain;
+}
+
+.story-visual {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e7e7e7;
+}
+
+.main-image {
+  overflow: hidden;
+}
+
+.product-hero-hat {
+  background-size: 74% auto;
+}
+
+.thumbs .product-photo.hat {
+  background-size: 82% auto;
+}
+
+@media (max-width: 1040px) {
+  .ranking-grid .product-photo.model-product,
+  .coordinate-grid .style-photo,
+  .styling-grid .style-photo,
+  .fit-grid .photo-person.profile {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 720px) {
